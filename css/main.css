@@ -1,0 +1,122 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../includes/fonts/SinkinSans-300Light.otf);
+}
+
+/*start grid*/
+
+    /* --------------------------------------------------
+    Container
+    -------------------------------------------------- */
+    div#container, div.container { position: relative; width: 940px; margin: 0 auto; padding: 0; }
+     
+     
+    /* --------------------------------------------------
+    Grid
+    -------------------------------------------------- */
+    .column-row, .row { margin: 0 0 18px -20px; }
+    .column, .columns { float: left; display: inline; margin: 0 0 0 20px; }
+     
+    .one { width: 60px; }
+    .two { width: 140px; }
+    .three { width: 220px; }
+    .four { width: 300px; }
+    .five { width: 380px; }
+    .six { width: 460px; }
+    .seven { width: 540px; }
+    .eight { width: 620px; }
+    .nine { width: 700px; }
+    .ten { width: 780px; }
+    .eleven { width: 860px; }
+    .twelve { width: 940px; }
+     
+    .offset-one-half { margin-left: 40px; }
+    .offset-one { margin-left: 80px; }
+    .offset-two { margin-left: 160px; }
+    .offset-three { margin-left: 240px; }
+    .offset-four { margin-left: 320px; }
+    .offset-five { margin-left: 400px; }
+    .offset-six { margin-left: 480px; }
+    .offset-seven { margin-left: 560px; }
+    .offset-eight { margin-left: 640px; }
+    .offset-nine { margin-left: 720px; }
+    .offset-ten { margin-left: 800px; }
+     
+    /* Clear the columns automagically, thanks @kneath */
+    .column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+    * html .column-row, * html .row, * html .clearfix { height: 1%; }
+    .column-row, .row, .clearfix { display: inline-block; }
+    .column-row, .row, .clearfix { display: block; }
+     
+    /* IE6 Problems ---------- */
+    body.ie .column-row { width: 960px; }
+    body.ie .eight .column-row { width: 640px; }
+    body.ie .nine .column-row { width: 720px; }
+    body.ie .ten .column-row { width: 800px; }
+    body.ie .eleven .column-row { width: 880px; }
+    body.ie .two-thirds .column-row { width: 640px; }
+
+
+/*end grid*/
+html,body{
+	background-color: #fff;
+	width:100%;
+	height: 100%;
+    font-family: myFirstFont;
+}
+
+
+/*HEADER SELECTORS*/
+
+header{
+	width: 100%;
+	padding: 10px 0px;
+    background-color: #111111;
+    color:#fff;
+    font-size: 1em;
+}
+header h1{
+    font-size: 1em;
+    margin:20px;
+}
+
+.hero{
+    width:70%;
+    height: 82.5%;
+    min-height: 82.5%;
+    background-color: #232323;
+    float: left;
+    background-size:cover;
+    padding: 0 1% 0 1%;
+    overflow: hidden;
+}
+
+.menuButton{
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../image/glyphicons/glyphicons/png/glyphicons-157-show-thumbnails.png);
+    background-size: cover;
+    background-color: #fff;
+}
+
+.hero h1{
+    color:#fff;
+    margin-top:30%;
+}
+.hero h2{
+    color:#fff;
+    font-size: .85em;
+}
+.date{
+    color:#ff3300;
+}
+.article-box{
+    float: right;
+    height: 82.5%;
+    min-height: 82.5%;
+    width:26%;
+    overflow: scroll;
+    padding: 0% 1% 0 1%;
+}
